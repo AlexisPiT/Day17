@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter:wght@100..900&family=Nanum+Gothic+Coding&display=swap');
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    background-color: hsl(0, 0%, 8%);
+    color: white;
+    flex-direction: column;
+}
+
+.container{
+    background-color: hsl(0, 0%, 20%);
+    padding: 25px;
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+}
+.header{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.image{
+    width: 75px;
+    height: 75px;
+    
+}
+.avatar{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.name{
+    font-size: 1.5rem;
+}
+.country{
+    font-weight: bold;
+    color: hsl(75, 94%, 57%);
+}
+.description{
+    font-size: 14px;
+}
+.content_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.8em;
+    padding-top: 10px;
+}
+.links{
+    padding: 15px;
+    border-radius: 10px;
+    border: transparent;
+    background-color: hsl(0, 0%, 12%);   
+    color: white; 
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    width: auto;
+}
+
+.links:hover{
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 12%); ;
+}
+@media screen and (max-width: 600px) {
+    body{
+        height: auto;
+        overflow: auto;
+        padding: 25px 0;
+    }
+    .container{
+        padding: 30px 20px;
+    }
+    
+}
